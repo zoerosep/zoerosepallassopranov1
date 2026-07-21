@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1200" viewBox="0 0 900 1200" role="img" aria-labelledby="title desc">
+  <title id="title">ABOUT PORTRAIT</title>
+  <desc id="desc">Replace with another portrait or production image</desc>
+  <rect width="100%" height="100%" fill="#f3eaf3"/>
+  <circle cx="108.0" cy="216.0" r="49.5" fill="#f2b02c" opacity="0.75"/>
+  <circle cx="792.0" cy="983.9999999999999" r="67.5" fill="#dd3290" opacity="0.18"/>
+  <path d="M 162.0 900.0 C 270.0 660.0, 378.0 1140.0, 486.00000000000006 816.0000000000001 S 702.0 720.0, 792.0 384.0" fill="none" stroke="#1f7a8c" stroke-width="9" opacity="0.5"/>
+  <g transform="translate(450.0,600.0)">
+    <ellipse cx="-55" cy="-18" rx="52" ry="70" fill="#885a89" opacity="0.65" transform="rotate(-28)"/>
+    <ellipse cx="55" cy="-18" rx="52" ry="70" fill="#885a89" opacity="0.65" transform="rotate(28)"/>
+    <ellipse cx="-42" cy="52" rx="35" ry="48" fill="#892951" opacity="0.65" transform="rotate(28)"/>
+    <ellipse cx="42" cy="52" rx="35" ry="48" fill="#892951" opacity="0.65" transform="rotate(-28)"/>
+    <rect x="-7" y="-60" width="14" height="130" rx="7" fill="#892951"/>
+  </g>
+  <text x="50%" y="82%" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-size="37" font-weight="700" fill="#892951">ABOUT PORTRAIT</text>
+  <text x="50%" y="88%" text-anchor="middle" font-family="Montserrat, Arial, sans-serif" font-size="21" fill="#145361">Replace with another portrait or production image</text>
+</svg>
