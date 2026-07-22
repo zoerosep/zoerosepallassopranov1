@@ -179,19 +179,6 @@ p {
     -1rem 0 0 -2px var(--teal);
 }
 
-.floral-corner {
-  position: relative;
-}
-
-.floral-corner::after {
-  content: "❀";
-  position: absolute;
-  right: 1rem;
-  bottom: 0.5rem;
-  color: var(--gold);
-  font-size: 2.4rem;
-  opacity: 0.8;
-}
 
 /* ---------- Header and navigation ---------- */
 
@@ -309,8 +296,6 @@ p {
   display: grid;
   gap: 1.5rem;
   background:
-    radial-gradient(circle at 10% 15%, rgba(242, 176, 44, 0.22) 0 8px, transparent 9px),
-    radial-gradient(circle at 88% 80%, rgba(221, 50, 144, 0.14) 0 10px, transparent 11px),
     var(--soft-teal);
 }
 
@@ -418,9 +403,7 @@ p {
 
 .page-hero {
   padding: 3.5rem 1.25rem;
-  background:
-    linear-gradient(rgba(31, 122, 140, 0.92), rgba(31, 122, 140, 0.92)),
-    url("../assets/floral-placeholder.svg") center / cover;
+  background: #207A8C;
   color: var(--white);
   text-align: center;
 }
