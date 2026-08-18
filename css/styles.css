@@ -424,6 +424,10 @@ p {
   box-shadow: var(--shadow);
 }
 
+.aboutCard {
+  text-align: center;
+}
+
 .bio {
   max-width: 800px;
 }
