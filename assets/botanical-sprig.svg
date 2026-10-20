@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 250" fill="none" aria-hidden="true">
+  <!-- Botanical linework; this asset contains no photography or embedded font. -->
+  <g stroke="#1F7A8C" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M35 242 C47 209 68 185 76 150 C88 113 78 81 111 18" stroke-width="3"/>
+    <path d="M55 204 C16 205 14 165 8 151 C33 153 52 171 55 204Z" stroke-width="2.4" fill="#1F7A8C" fill-opacity=".09"/>
+    <path d="M65 178 C96 174 114 153 127 128 C95 128 72 146 65 178Z" stroke-width="2.4" fill="#1F7A8C" fill-opacity=".09"/>
+    <path d="M77 148 C40 139 34 107 34 91 C58 103 75 118 77 148Z" stroke-width="2.4" fill="#1F7A8C" fill-opacity=".09"/>
+    <path d="M85 112 C111 98 133 78 137 57 C109 66 89 81 85 112Z" stroke-width="2.4" fill="#1F7A8C" fill-opacity=".09"/>
+    <path d="M95 68 C68 53 69 27 79 10 C95 28 100 43 95 68Z" stroke-width="2.4" fill="#1F7A8C" fill-opacity=".09"/>
+    <path d="M48 223 C64 223 84 226 100 240" stroke-width="2.4"/>
+    <path d="M79 224 C90 202 110 192 136 190 C127 211 109 224 79 224Z" stroke-width="2.4" fill="#1F7A8C" fill-opacity=".07"/>
+    <path d="M79 224 C88 214 108 203 123 198" stroke-width="1.5" opacity=".65"/>
+    <path d="M55 204 C39 189 27 175 18 165" stroke-width="1.5" opacity=".65"/>
+    <path d="M65 178 C81 167 99 151 115 140" stroke-width="1.5" opacity=".65"/>
+    <path d="M77 148 C63 131 51 116 40 103" stroke-width="1.5" opacity=".65"/>
+  </g>
+  <!-- One tiny golden blossom, intentionally matte rather than sparkly. -->
+  <g stroke="#892951" stroke-width="1.8" fill="#F2B02C" fill-opacity=".35">
+    <ellipse cx="149" cy="45" rx="11" ry="18" transform="rotate(15 149 45)"/>
+    <ellipse cx="168" cy="59" rx="11" ry="18" transform="rotate(83 168 59)"/>
+    <ellipse cx="155" cy="76" rx="11" ry="18" transform="rotate(149 155 76)"/>
+    <ellipse cx="136" cy="66" rx="11" ry="18" transform="rotate(218 136 66)"/>
+    <circle cx="151" cy="61" r="6" fill="#892951" fill-opacity=".5"/>
+  </g>
+  <path d="M105 37 Q121 52 140 60" stroke="#1F7A8C" stroke-width="2.4"/>
+</svg>

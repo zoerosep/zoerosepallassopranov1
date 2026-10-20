@@ -1,0 +1,239 @@
+/*
+  Zoe Rose Pallas visual polish
+  ----------------------------
+  Load this file AFTER css/styles.css on each page.
+  This file only changes backgrounds and decorative details.
+  It does not change your layout, carousel, image sizing, or JavaScript.
+*/
+
+/* 1. Softer, flowing gradients instead of flat color blocks */
+.home-hero {
+  background:
+    radial-gradient(ellipse at 13% 17%, rgba(242, 176, 44, 0.12), transparent 48%),
+    radial-gradient(ellipse at 91% 75%, rgba(136, 90, 137, 0.12), transparent 55%),
+    linear-gradient(135deg, #eaf5f4 0%, #fffaf1 57%, #f5edf4 100%);
+}
+
+.featured-media {
+  background:
+    radial-gradient(ellipse at 9% 30%, rgba(221, 50, 144, 0.08), transparent 52%),
+    radial-gradient(ellipse at 91% 83%, rgba(31, 122, 140, 0.11), transparent 55%),
+    linear-gradient(130deg, #f5edf4 0%, #fdf9f5 55%, #eaf4f3 100%);
+}
+
+/* Interior-page sections, such as About and the Media page's first section */
+.container main > .section:not(.home-hero):not(.featured-media) {
+  background:
+    radial-gradient(ellipse at 90% 13%, rgba(242, 176, 44, 0.07), transparent 45%),
+    linear-gradient(145deg, #fffaf1, #faf6f8 56%, #f2f9f7);
+}
+
+.page-hero {
+  background: linear-gradient(120deg, #1d6f7c 0%, #287f89 50%, #765578 100%);
+}
+
+.site-header {
+  border-bottom: 0;
+  background: linear-gradient(110deg, #1b6d7a 0%, #1f7a8c 62%, #497c88 100%);
+}
+
+.contact-panel {
+  border-top: 0;
+  border-bottom: 0;
+  background:
+    radial-gradient(circle, rgba(242, 176, 44, 0.65) 1.6px, transparent 2.4px)
+      left top / 16px 8px repeat-x,
+    radial-gradient(circle, rgba(242, 176, 44, 0.65) 1.6px, transparent 2.4px)
+      left bottom / 16px 8px repeat-x,
+    linear-gradient(120deg, #762445 0%, #892951 55%, #7c4c79 100%);
+}
+
+.site-footer {
+  position: relative;
+  border-top: 0;
+  background: linear-gradient(115deg, #145361 0%, #23586a 62%, #503755 100%);
+}
+
+/* 2. A dotted, beaded edge on the header and footer */
+/* .site-header::after,
+.site-footer::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 8px;
+  pointer-events: none;
+  background:
+    radial-gradient(circle, rgba(242, 176, 44, 0.8) 2px, transparent 2.6px)
+    left center / 16px 8px repeat-x;
+}
+
+.site-header::after { bottom: 0; }
+.site-footer::before { top: 0; } */
+
+/* 3. Turn existing bead-rule lines into strings of tiny beads */
+.bead-rule::before,
+.bead-rule::after {
+  height: 10px;
+  background:
+    radial-gradient(circle, rgba(137, 41, 81, 0.55) 1.8px, transparent 2.5px)
+    left center / 14px 10px repeat-x;
+}
+
+/* A subtle bead border between back-to-back content sections */
+.container main > .section + .section:not(.featured-media) {
+  position: relative;
+}
+
+.container main > .section + .section:not(.featured-media)::before,
+.featured-media::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 90%;
+  height: 9px;
+  pointer-events: none;
+  opacity: 0.6;
+  background:
+    radial-gradient(circle, #b78454 1.7px, transparent 2.4px)
+    left center / 15px 9px repeat-x;
+}
+
+/* 4. Botanical linework on section corners; purely decorative */
+.home-hero,
+.featured-media,
+.page-hero {
+  position: relative;
+}
+
+.home-hero::after,
+.featured-media::after,
+.page-hero::after {
+  content: "";
+  position: absolute;
+  width: clamp(75px, 13vw, 155px);
+  height: clamp(105px, 18vw, 205px);
+  right: 0.8rem;
+  bottom: 0.4rem;
+  background: url("../assets/botanical-sprig.svg") center / contain no-repeat;
+  opacity: 0.23;
+  transform: rotate(-12deg);
+  pointer-events: none;
+}
+
+.page-hero::after {
+  top: 0;
+  bottom: auto;
+  opacity: 0.43;
+}
+
+/* Ensure botanical artwork stays visually behind text and images. */
+.home-hero > *,
+.featured-media > *,
+.page-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Replace the old star decorations with matching botanical sprigs. */
+.contact-panel::before,
+.contact-panel::after {
+  content: "";
+  width: 125px;
+  height: 170px;
+  background: url("../assets/botanical-sprig.svg") center / contain no-repeat;
+  opacity: 0.16;
+  pointer-events: none;
+}
+
+.contact-panel::before {
+  top: -0.6rem;
+  left: 0;
+  transform: rotate(168deg);
+}
+
+.contact-panel::after {
+  right: 0;
+  bottom: -1rem;
+  transform: rotate(-15deg);
+}
+
+/* Smaller ornaments on phones, keeping the same mobile-first layout. */
+@media (max-width: 649px) {
+  .home-hero::after,
+  .featured-media::after,
+  .page-hero::after {
+    opacity: 0.13;
+    width: 76px;
+    height: 110px;
+  }
+
+  .contact-panel::before,
+  .contact-panel::after {
+    width: 75px;
+    height: 110px;
+  }
+}
+
+/* The content remains fully usable if the visitor prefers reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  .button {
+    transition: none;
+  }
+}
+/* Restore solid gold borders */
+
+.site-header {
+    border-bottom: 8px solid var(--gold);
+}
+
+.site-header::after {
+    content: none;
+}
+
+.site-footer {
+    border-top: 8px solid var(--gold);
+}
+
+.site-footer::before {
+    content: none;
+}
+/* body {
+    background: linear-gradient(
+        145deg,
+        #145361 0%,
+        #1b6874 52%,
+        #183f55 100%
+    );
+    background-attachment: fixed;
+} */
+/* body {
+    background: linear-gradient(
+        145deg,
+        #42344f 0%,
+        #60445e 55%,
+        #302d48 100%
+    );
+    background-attachment: fixed;
+} */
+ /* body {
+    background: linear-gradient(
+        145deg,
+        #76516d 0%,
+        #986d88 55%,
+        #594764 100%
+    );
+    background-attachment: fixed;
+} */
+body {
+    background: linear-gradient(
+        125deg,
+        #39858c 0%,
+        #6b8795 25%,
+        #997c99 55%,
+        #aa8299 78%,
+        #87647d 100%
+    );
+    background-attachment: fixed;
+}
