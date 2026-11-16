@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,400&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@400;500;600;700&display=swap");
 
 :root {
   --teal: #1f7a8c;
@@ -15,7 +15,7 @@
   --soft-teal: #e7f4f5;
 
   --sans: "Montserrat", sans-serif;
-  --serif: "Averia Serif Libre", "IBM Plex Serif", serif;
+  --serif: "IBM Plex Serif", Georgia, serif;
 
   --shadow: 0 12px 30px rgba(23, 19, 23, 0.12);
   --radius-small: 0.75rem;
@@ -40,7 +40,7 @@ body {
   margin: 0;
   color: var(--black);
   background-color: var(--teal-dark);
-  font-family: var(--sans);
+  font-family: var(--serif);
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -59,7 +59,7 @@ h1,
 h2,
 h3 {
   margin-top: 0;
-  font-family: var(--serif);
+  font-family: var(--sans);
   line-height: 1.15;
 }
 
@@ -208,7 +208,7 @@ p {
   border-radius: 50px;
   background-color: var(--berry);
   color: var(--white);
-  font-family: var(--serif);
+  font-family: var(--sans);
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.06rem;
@@ -216,7 +216,7 @@ p {
 
 .brand-title {
   display: block;
-  font-family: var(--serif);
+  font-family: var(--sans);
   font-size: clamp(1.7rem, 7vw, 3rem);
   line-height: 1;
 }

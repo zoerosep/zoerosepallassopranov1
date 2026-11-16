@@ -26,8 +26,7 @@ The shared stylesheet is located at:
 
 The site uses:
 
-- Montserrat
-- Averia Serif Libre
-- IBM Plex Serif as a fallback
+- Montserrat for headings
+- IBM Plex Serif for body text
 
 Brand colors are stored as CSS variables at the top of `styles.css`, making them easy to edit.
